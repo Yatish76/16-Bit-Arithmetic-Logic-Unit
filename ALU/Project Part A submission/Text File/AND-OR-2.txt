@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity AND_2 is
+    port(a_1,a_2 : in bit ;
+	      out_1     : out bit );
+end AND_2;
+
+architecture arc_1 of AND_2 is
+
+begin
+    out_1 <= a_1 and a_2 ;
+
+end arc_1;
+	 
+	 
+	 
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity OR_2 is
+    port(o_1,o_2 : in bit ;
+	      out_2     : out bit );
+end OR_2;
+
+architecture arc_2 of OR_2 is
+
+begin
+    out_2 <= o_1 or o_2 ;
+
+end arc_2;
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity NOT_1 is
+   port (n_1 : in bit ;
+         out_3 : out bit);
+end NOT_1;
+
+architecture arc_3 of NOT_1 is
+
+begin 
+   out_3 <= not n_1;
+
+end arc_3;
